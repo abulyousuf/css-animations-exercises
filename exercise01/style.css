@@ -1,0 +1,27 @@
+/* Exercise 1 */
+/* Make a box change from one colour to another on repeat */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    width: 250px;
+    height: 250px;
+    background-color: #2a9d8f;
+    animation: changeColor 2s infinite alternate;
+}
+
+@keyframes changeColor {
+    from {
+        background-color: #2a9d8f;
+    }
+
+    to {
+        background-color: #264653;
+    }
+}
