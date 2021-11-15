@@ -1,0 +1,50 @@
+/**********
+Exercise 3
+Make a box that:
+Part 1: the box should move right/down/left/up in a square and then back again, on repeat
+Part 2: When you hover over it, it should stop
+**********/
+
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #586ba4;
+    position: fixed;
+    top: 0;
+    left: 0;
+    animation: move-box 7s;
+    animation-fill-mode: forwards;
+    animation-direction: normal;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move-box {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    25% {
+        top: calc(100% - 200px);
+        left: 0;
+    }
+
+    50% {
+        top: calc(100% - 200px);
+        left: calc(100% - 200px);
+    }
+
+    75% {
+        top: 0;
+        left: calc(100% - 200px);
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+.box:hover {
+    animation-play-state: paused;
+}
