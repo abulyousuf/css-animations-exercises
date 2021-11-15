@@ -1,0 +1,26 @@
+/* Exercise 2 */
+/* Make a button that changes colour when you hover over it */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    border: none;
+    padding: 15px 35px;
+    font-weight: bold;
+    background-color: #e9c46a;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: background-color 2s;
+}
+
+button:hover,
+button:focus {
+    background-color: #e76f51;
+}
